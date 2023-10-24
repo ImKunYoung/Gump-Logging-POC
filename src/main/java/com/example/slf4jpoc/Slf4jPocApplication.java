@@ -1,13 +1,13 @@
 package com.example.slf4jpoc;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
 public class Slf4jPocApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Slf4jPocApplication.class, args);
+        for (int i = 0; i < 20; i++) {
+            System.out.println("로깅 재밌어!");
+            System.err.println("이건 에러야!");
+        }
     }
 
 }
